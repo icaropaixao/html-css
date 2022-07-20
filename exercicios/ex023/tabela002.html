@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            margin: auto;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            background-color: lightgray;
+            border-radius: 5px 5px 0px 0px ;
+            font-weight: bolder;
+            padding: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td.num{
+            text-align: right;
+        }
+        td{
+            text-align: left;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        tfoot{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas grandes</h1>
+    <table>
+        <caption>População dos Estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                
+                <th scope="col" style="width: 50px";>População</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45.919930</td>
+            </tr>
+
+            <tr>
+               <td>Minas Gerais</td>
+               <td class="num">98319.1293</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15.94324234</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">283291.3213</td>
+            </tr>
+
+            <tr>
+                <td>Parana</td>
+                <td class="num">21512134</td>
+            </tr>
+
+            <tr>
+                <td>Rio grande do sul</td>
+                <td class="num">0054545455</td>
+            </tr>
+
+            <tr>
+                <td>Peranbuco</td>
+                <td class="num">54548452</td>
+            </tr>
+
+            <tr>
+                <td>Ceara</td>
+                <td class="num">54518484</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="num">6859548.777</td>
+            </tr>
+
+            <tr>
+                <td>Santa catarina</td>
+                <td class="num">54545454</td>
+            </tr>
+
+            <tr>
+                <td>Goias</td>
+                <td class="num class="num"">3333355454</td>
+            </tr>
+
+            <tr>
+                <td>Maranhao</td>
+                <td class="num">545815781578</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">545454545</td>
+            </tr>
+
+            <tr>
+                <td>Espirito santo</td>
+                <td class="num">6488487878</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>877775454</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
