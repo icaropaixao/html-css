@@ -60,6 +60,7 @@
             text-align: center;
             border: 1px solid black;
         }
+        
     </style>
 </head>
 <body>
@@ -68,14 +69,14 @@
         <caption>Filmes Favoritos</caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
         </thead>
         <tbody>
            <tr> 
-                <th class="generos" rowspan="3">Mulheres</th>
+                <th scope="rowgroup" class="generos" rowspan="3">Mulheres</th>
                 <td>Ana maria</td>
                 <td> Alien</td>
                 <td>Rambo</td>
@@ -94,7 +95,7 @@
                 <td>Dangal</td>
             </tr>
             <tr> 
-                <th class="generos" rowspan="3">Homens</th>
+                <th scope="rowgroup" class="generos" rowspan="3">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td> Alien</td>
                 <td>Rambo</td>
@@ -113,6 +114,6 @@
                 <td>Vingadores</td>
             </tr>
         </tbody>    
-    </table>   
+    </table>
 </body>
 </html>
